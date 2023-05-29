@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="..\Resources\AlphaBlend_gl.mgfxo" Link="AlphaBlend_gl.mgfxo" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Monofoxe.Engine\Monofoxe.Engine.csproj" />
+  </ItemGroup>
+
+</Project>

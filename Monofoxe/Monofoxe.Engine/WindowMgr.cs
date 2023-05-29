@@ -151,8 +151,5 @@ namespace Monofoxe.Engine
 		/// </summary>
 		public void CenterWindow() => 
 			WindowPosision = ((ScreenSize - CanvasSize) / 2).ToPoint();
-		
-
-
 	}
 }

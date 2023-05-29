@@ -8,6 +8,7 @@ using System.Runtime.CompilerServices;
 
 [assembly: InternalsVisibleTo("Monofoxe.Engine.WindowsDX")]
 [assembly: InternalsVisibleTo("Monofoxe.Engine.DesktopGL")]
+[assembly: InternalsVisibleTo("Monofoxe.Engine.Android")]
 
 namespace Monofoxe.Engine
 {
@@ -96,8 +97,8 @@ namespace Monofoxe.Engine
 			Game = game;
 			Game.IsMouseVisible = true;
 
-			var keyboardBind = StuffResolver.GetStuff<ITextInputBinder>();
-			keyboardBind?.Init();
+			// var keyboardBind = StuffResolver.GetStuff<ITextInputBinder>();
+			// keyboardBind?.Init();
 
 
 			Input.MaxGamepadCount = 2;
