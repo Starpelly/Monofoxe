@@ -13,6 +13,11 @@ namespace Monofoxe.Engine.Utils
 		public static double Lerp(double a, double b, double value) =>
 			a + (b - a) * value;
 
+		public static float Round2Nearest(float a, float interval)
+		{
+			return a - (a % interval);
+		}
+
 
 		#endregion Math.
 

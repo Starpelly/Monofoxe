@@ -2,9 +2,12 @@
 {
 	public static class MonofoxePlatform
 	{
-		public static void Init()
+		public static void Init(bool setCurrentPlatform = true)
 		{
-			GameMgr.CurrentPlatform = Platform.Windows;
+			if (setCurrentPlatform)
+			{
+				GameMgr.CurrentPlatform = Platform.Windows;
+			}
 			GameMgr.CurrentGraphicsBackend = GraphicsBackend.DirectX;
 
 			StuffResolver.AddStuffAs<IAlphaBlendEffectLoader>(new AlphaBlendEffectLoaderWindowsDX());

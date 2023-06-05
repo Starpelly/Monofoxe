@@ -82,7 +82,7 @@ namespace Monofoxe.Engine.Cameras
 		/// <summary>
 		/// Viewport scale.
 		/// </summary>
-		public float PortScale = 1;
+		public Vector2 PortScale = Vector2.One;
 		
 		/// <summary>
 		/// Viewport rotation.
